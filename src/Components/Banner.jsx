@@ -3,25 +3,25 @@
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full">
+            <div className="carousel w-full h-96">
                 <div id="item1" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                        src="https://i.ibb.co.com/NNy3ddW/th.jpg"
                         className="w-full" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                        src="https://i.ibb.co.com/DLYSc9j/additional-11f552c80ae7c186a75f47412324cde2098f2dc8-AICC2-7.jpg"
                         className="w-full" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                        src="https://i.ibb.co.com/Qv4hTqN/maxresdefault.jpg"
                         className="w-full" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                        src="https://i.ibb.co.com/k1sKtVM/515fb0ed223034f9c76c4a85365d4dd9.jpg"
                         className="w-full" />
                 </div>
             </div>
