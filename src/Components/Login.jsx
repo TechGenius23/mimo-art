@@ -11,7 +11,7 @@ const Login = () => {
     const {signwitheamil,googlelogin,twitterlogin,githublogin,user}=useContext(AuthContext);
     const location=useLocation();
     console.log(location);
-    const navigate=useNavigate()
+    const navigate=useNavigate('/home')
 
     const handlesubmit=(e)=>{
         e.preventDefault();
@@ -80,6 +80,7 @@ const Login = () => {
                 <p className="text-xs text-center sm:px-6 text-gray-400 dark:text-gray-600">Do not have an account?
                 <NavLink to={'/register'}><a rel="noopener noreferrer" href="#" className="underline text-gray-100 dark:text-gray-800">Register</a></NavLink>
                 </p>
+               
             </div>
         </div>
     );

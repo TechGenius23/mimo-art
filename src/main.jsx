@@ -16,12 +16,16 @@ import Mycart from './Components/Mycart';
 import Register from './Components/Register';
 import Authprovider from './Components/Authprovider';
 import Beforeallart from './Components/Beforeallart';
+import Update from './Components/Update';
+import ViewDetails from './Components/ViewDetails';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Route></Route>,
     children: [
+      
       {
         path: '/home',
         element: <Home></Home>
@@ -40,8 +44,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/allartandcraft',
-        element: <Allartandcraft></Allartandcraft>
-        
+        element: <Allartandcraft></Allartandcraft>,
+        loader:()=>fetch('http://localhost:5000/user')
       },
       {
         path:'/before',
@@ -50,7 +54,19 @@ const router = createBrowserRouter([
       },
       {
         path: '/mycart',
-        element: <Mycart></Mycart>
+        element: <Mycart />,
+        loader:()=>fetch(`http://localhost:5000/order`)
+    },
+     
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader:({params})=>fetch(`http://localhost:5000/user/${params.id}`)
+      },
+      {
+        path:'/viewdetails/:id',
+        element:<ViewDetails></ViewDetails>,
+        loader:({params})=>fetch(`http://localhost:5000/user/${params.id}`)
       }
     ]
   },
